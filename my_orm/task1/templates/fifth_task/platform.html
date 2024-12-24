@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = 'stylesheet' type="text/css" href = '{% static "style.css" %}'>
+    <title>platform</title>
+    <h1>Главная страница</h1>
+</head>
+<body>
+    <nav>
+        {% block menu %}
+            {% include 'menu.html' %}
+        {% endblock %}
+    </nav>
+
+
+</body>
+</html>
